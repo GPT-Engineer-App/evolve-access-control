@@ -22,7 +22,7 @@ const Index = () => {
           </Text>
         </Stack>
 
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} spacing={{ base: 5, md: 10 }}>
           // FaRfid icon has been removed as it was causing an import error
           <Feature icon={<Icon as={FaCamera} w={10} h={10} />} title="CCTV for Events" text="Comprehensive surveillance to ensure attendee safety." />
           <Feature icon={<Icon as={FaWifi} w={10} h={10} />} title="Wi-Fi Enhancements" text="Reliable internet connectivity for uninterrupted experiences." />
