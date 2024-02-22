@@ -5,9 +5,12 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const colors = {
   brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
+    900: "#16202A", // Darker shade for modern look
+    800: "#2C3E50", // Modern blue
+    700: "#34495E", // Slightly lighter blue
+  },
+  background: {
+    50: "#F7FAFC", // Light background
   },
 };
 
@@ -18,5 +21,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

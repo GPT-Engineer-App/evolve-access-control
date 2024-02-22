@@ -3,7 +3,7 @@ import { FaCamera, FaWifi, FaRegEye, FaUsers, FaRegLightbulb, FaLock } from "rea
 
 const Feature = ({ title, icon, text }) => (
   <Stack align={"center"} textAlign="center">
-    <Flex w={16} h={16} align={"center"} justify={"center"} color={"white"} rounded={"full"} bg={"teal.500"} mb={1}>
+    <Flex w={16} h={16} align={"center"} justify={"center"} color={"white"} rounded={"full"} bg={"brand.800"} mb={1}>
       {icon}
     </Flex>
     <Text fontWeight={600}>{title}</Text>
@@ -13,11 +13,11 @@ const Feature = ({ title, icon, text }) => (
 
 const Index = () => {
   return (
-    <Container maxW={"7xl"} p="12">
+    <Container maxW={"7xl"} p={8}>
       <Stack spacing={12}>
         <Stack spacing={2} align={"center"}>
-          <Heading fontSize={"3xl"}>Evolve Caribbean</Heading>
-          <Text fontSize={"lg"} color={"gray.500"}>
+          <Heading fontSize={"4xl"}>Evolve Caribbean</Heading>
+          <Text fontSize={"xl"} color={"gray.600"}>
             Elevating event experiences with cutting-edge solutions
           </Text>
         </Stack>
@@ -31,7 +31,7 @@ const Index = () => {
           <Feature icon={<Icon as={FaRegLightbulb} w={10} h={10} />} title="Drone Light Shows" text="Mesmerizing aerial displays that light up the sky." />
         </SimpleGrid>
 
-        <Divider my={10} />
+        <Divider my={12} opacity={0.6} />
 
         <Stack spacing={8}>
           <Heading fontSize={"2xl"} textAlign="center">
@@ -73,7 +73,7 @@ const Index = () => {
           </Box>
 
           <Flex justify="center">
-            <Button colorScheme="teal" size="lg">
+            <Button variant="outline" borderColor="brand.700" size="md">
               Learn More
             </Button>
           </Flex>
