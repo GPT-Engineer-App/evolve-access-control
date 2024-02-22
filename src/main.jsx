@@ -8,6 +8,9 @@ const colors = {
     900: "#16202A", // Darker shade for modern look
     800: "#2C3E50", // Modern blue
     700: "#34495E", // Slightly lighter blue
+    600: "#E53E3E", // Red shade
+    500: "#FFFFFF", // White
+    400: "#000000", // Black
   },
   background: {
     50: "#F7FAFC", // Light background
